@@ -1,15 +1,22 @@
-import { StyleSheet, Text, View } from "react-native";
+import { SafeAreaView, StyleSheet, Text, View } from "react-native";
 import React from "react";
-import Test from "../components/Test";
+import OpacityAnimation from "../components/01-opacity";
 
 const AppScreen = () => {
   return (
-    <View>
-      <Test />
-    </View>
+    <SafeAreaView style={styles.container}>
+      <OpacityAnimation />
+    </SafeAreaView>
   );
 };
 
 export default AppScreen;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+});
